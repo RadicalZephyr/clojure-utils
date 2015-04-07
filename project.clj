@@ -1,4 +1,4 @@
-(defproject utils "0.1.0-SNAPSHOT"
+(defproject repl-utils "0.1.0-SNAPSHOT"
   :description "Some useful development utilities."
   :url "https://github.com/RadicalZephyr/clojure-utils"
   :license {:name "Eclipse Public License"

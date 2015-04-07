@@ -1,8 +1,7 @@
 (ns radicalzephyr.repl-utils
-  (:require [clojure.java.io :as io]
-            [clojure.pprint  :as pp]))
+  (:require [clojure.java.io :as io]))
 
-(defmacro redirect [file-name & forms]
-  (with-open [wr (clojure.java.io/writer file-name)]
-    (binding [*out* wr]
-      ~@forms)))
+(defmacro redirect [file-name & body]
+  `(with-open [wr# (clojure.java.io/writer ~file-name)]
+     (binding [*out* wr#]
+       ~@body)))

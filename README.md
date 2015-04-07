@@ -1,14 +1,20 @@
-# utils
+# REPL Utils
 
-A Clojure library designed to ... well, that part is up to you.
+Some useful Clojure development utilities.
 
 ## Usage
 
-FIXME
+I like to include it in my [Leiningen][lein] `profiles.clj` like so.
+
+```clojure
+{:user
+ {:dependencies [[radicalzephyr/repl-utils "0.1.0"]]
+  :repl-options {:init (require '[radicalzephyr.repl-utils :refer :all])}}}
+```
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Geoff Shannon
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

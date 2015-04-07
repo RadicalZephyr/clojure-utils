@@ -1,4 +1,4 @@
-(defproject radicalzephyr/repl-utils "0.2.0-SNAPSHOT"
+(defproject radicalzephyr/repl-utils "0.2.0"
   :description "Some useful development utilities."
   :url "https://github.com/RadicalZephyr/repl-utils"
   :license {:name "Eclipse Public License"
